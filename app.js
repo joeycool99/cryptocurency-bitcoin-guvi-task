@@ -18,7 +18,7 @@ const fetchBitcoinPrice = async () => {
         const data = await res.json();
         var fin = (Math.trunc(data.ticker.price))
 
-        bitcoin.append(`₹${fin}`)
+        bitcoin.append(`$${fin}`)
 
     } catch (e) {
         return ("SOMETHING WENT WRONG!!!", e)
